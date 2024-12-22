@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Resume</title>
+    <style>
+        /* General body styling */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f8ff; /* Light blue background */
+            color: #333;
+        }
+
+        /* Add black borders to all divs */
+        div {
+            border: 1px solid black;
+        }
+
+        /* Remove border from header divs */
+        header div {
+            border: none;
+        }
+
+        /* Header section styling */
+        header {
+            background: linear-gradient(90deg, #1e90ff, #00bfff); /* Blue gradient */
+            color: white;
+            display: flex; /* Flexbox for alignment */
+            align-items: center; /* Vertically center content */
+            padding: 20px;
+        }
+
+        /* Profile image container styling */
+        .profile-pic-container {
+            width: 150px; /* Increased size */
+            height: 150px; /* Ensures it stays square */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden; /* Hide overflowing parts of the image */
+            margin-right: 20px; /* Space between image and text */
+            border: 2px solid white; /* Thinner border */
+        }
+
+        /* Profile image styling */
+        .profile-pic {
+            width: 100%; /* Allow image to fill the container */
+            height: 100%; /* Maintain aspect ratio */
+            object-fit: cover; /* Ensure the image fits the square without distortion */
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin: 0;
+        }
+
+        header p {
+            font-size: 1.2em;
+            margin: 5px 0 0;
+        }
+
+        /* Layout container with sidebar */
+        .main-container {
+            display: flex;
+            flex-direction: row;
+        }
+
+        /* Sidebar styling */
+        .sidebar {
+            width: 25%;
+            background-color: #1e90ff; /* Solid blue */
+            color: white;
+            padding: 20px;
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .sidebar h2 {
+            font-size: 1.5em;
+            margin-bottom: 20px;
+        }
+
+        .sidebar a {
+            color: white;
+            text-decoration: none;
+            display: block;
+            margin: 10px 0;
+            font-size: 1.1em;
+        }
+
+        .sidebar a:hover {
+            text-decoration: underline;
+        }
+
+        /* Main content styling */
+        .content {
+            width: 75%;
+            padding: 20px 40px;
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        h2 {
+            color: #1e90ff; /* Blue accent color */
+            font-size: 1.8em;
+            border-bottom: 2px solid #1e90ff;
+            padding-bottom: 5px;
+            margin-bottom: 20px;
+        }
+
+        p, li {
+            font-size: 1.1em;
+            line-height: 1.8;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        ul li {
+            margin-bottom: 10px;
+        }
+
+        /* Contact links styling */
+        .contact a {
+            color: #1e90ff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .contact a:hover {
+            text-decoration: underline;
+        }
+
+        .sidebar a {
+            color: white;
+            text-decoration: none;
+            display: block;
+            margin: 10px 0;
+            font-size: 1.1em;
+            padding: 10px 15px; /* Added padding for better spacing */
+            border-radius: 5px; /* Optional: Rounded corners for links */
+        }
+
+        .sidebar a:hover {
+            background-color: #00bfff; /* Highlight on hover */
+            text-decoration: none;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- Header section -->
+    <header>
+        <!-- Profile picture container -->
+        <div class="profile-pic-container">
+            <img src="sampledp.jpg" alt="Your Photo" class="profile-pic">
+        </div>
+        <div>
+            <h1>Jon Matthew B. Mella</h1>
+            <p>2nd Year BS Information Systems Student</p>
+        </div>
+    </header>
+
+    <!-- Main container with sidebar and content -->
+    <div class="main-container">
+        <!-- Sidebar for quick navigation -->
+        <div class="sidebar">
+            <h2>Navigation</h2>
+            <a href="#about">About Me</a>
+            <a href="#education">Education</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
+        </div>
+
+        <!-- Main content -->
+        <div class="content">
+            <!-- About Me section -->
+            <section id="about">
+                <h2>About Me</h2>
+                <p>I am a second-year student pursuing a Bachelor of Science in Information Systems. I have a strong interest in technology, data analysis, and software development. I am eager to aquire more knowledge and apply it to real-world projects and continuously improve my skills.</p>
+            </section>
+
+            <!-- Education section -->
+            <section id="education">
+                <h2>Education</h2>
+                <ul>
+                    <li><strong>Bachelor of Science in Information Systems</strong> - Bicol University Polangui Campus (2023-Present)</li>
+                    <li><strong>Senior High School </strong>- Ligao National High School (2021-2023)</li>
+                    <li><strong>Junior High School </strong>- St. Mary's Academy of Ligao (2017-2021)</li>
+                    <li><strong>Elementary </strong>- Polangui South Central Elementary School (2010-2017)</li>
+                </ul>
+            </section>
+
+            <!-- Skills section -->
+            <section id="skills">
+                <h2>Skills</h2>
+                <ul>
+                    <li>Programming Languages: C++, php</li>
+                    <li>Web Development: HTML, CSS, Bootstrap</li>
+                    <li>Database Management: MySQL, </li>
+                    <li>Tools: Microsoft Office Suite,WPS Office, Xampp</li>
+                    <li>Soft Skills: Team Collaboration, Problem Solving, Time Management</li>
+                </ul>
+            </section>
+
+            <!-- Contact section -->
+            <section id="contact">
+                <h2>Contact</h2>
+                <p>Email: mellajonmatthew@gmail.com</p>
+                <p>Phone: 0991 722 6284</p>
+                <p>Facebook: <a href="https://web.facebook.com/kiyopon.ayanogod.17" target="_blank">https://web.facebook.com/kiyopon.ayanogod.17</a></p>
+                <p>Messenger: Jon Matthew Mella</p>
+            </section>
+        </div>
+    </div>
+</body>
+</html>
